@@ -1,0 +1,14 @@
+[
+  {
+    "name": "hook_01",
+    "image": "hook_01.png",
+    "prompt": "slow push-in on a condensation-covered window pane at dawn, water beads sliding down, soft natural light, shallow depth of field, cinematic, no camera shake",
+    "negative": "blurry, distorted, text, watermark, scene change, morphing"
+  },
+  {
+    "name": "hook_02",
+    "image": "hook_02.png",
+    "prompt": "gentle drifting camera over a damp bathroom tile corner, faint steam, cool morning light, documentary realism, steady motion",
+    "negative": "blurry, distorted, text, watermark, scene change, morphing"
+  }
+]

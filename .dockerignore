@@ -1,0 +1,5 @@
+out/
+examples/*.png
+examples/*.jpg
+.git/
+**/__pycache__/

@@ -1,0 +1,8 @@
+out/
+node-*/
+*.mp4
+examples/*.png
+examples/*.jpg
+__pycache__/
+*.pyc
+.env

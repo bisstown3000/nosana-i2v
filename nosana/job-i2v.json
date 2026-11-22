@@ -1,0 +1,36 @@
+{
+  "version": "0.1",
+  "type": "container",
+  "meta": {
+    "trigger": "cli"
+  },
+  "global": {
+    "env": {
+      "I2V_OUT": "/work/out",
+      "I2V_MODEL": "/data-models/wan22-ti2v-5b",
+      "I2V_STEPS": "30",
+      "I2V_FRAMES": "81",
+      "I2V_WIDTH": "1280",
+      "I2V_HEIGHT": "704",
+      "I2V_TIMEOUT": "2700",
+      "I2V_JOB_JSON": "[{\"name\":\"hook_01\",\"image\":\"https://REPLACE_ME/hook_01.png\",\"prompt\":\"slow push-in on condensation beading and sliding down a cold glass, shallow depth of field, soft window light\"}]"
+    }
+  },
+  "ops": [
+    {
+      "type": "container/run",
+      "id": "i2v",
+      "args": {
+        "image": "docker.io/REPLACE_ME/nosana-i2v:latest",
+        "gpu": true,
+        "resources": [
+          {
+            "type": "HF",
+            "repo": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+            "target": "/data-models/wan22-ti2v-5b"
+          }
+        ]
+      }
+    }
+  ]
+}
