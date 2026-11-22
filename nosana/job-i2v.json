@@ -13,7 +13,7 @@
       "I2V_WIDTH": "1280",
       "I2V_HEIGHT": "704",
       "I2V_TIMEOUT": "2700",
-      "I2V_JOB_JSON": "[{\"name\":\"hook_01\",\"image\":\"https://REPLACE_ME/hook_01.png\",\"prompt\":\"slow push-in on condensation beading and sliding down a cold glass, shallow depth of field, soft window light\"}]"
+      "I2V_JOB_JSON": "[{\"name\":\"hook_01\",\"image\":\"https://raw.githubusercontent.com/bisstown3000/nosana-i2v/main/examples/stills/hook_01.png\",\"prompt\":\"slow push-in on condensation beading and sliding down a cold glass, shallow depth of field, soft window light\"}]"
     }
   },
   "ops": [
@@ -21,7 +21,7 @@
       "type": "container/run",
       "id": "i2v",
       "args": {
-        "image": "docker.io/REPLACE_ME/nosana-i2v:latest",
+        "image": "ghcr.io/bisstown3000/nosana-i2v:latest",
         "gpu": true,
         "resources": [
           {

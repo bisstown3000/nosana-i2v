@@ -55,7 +55,7 @@ bench/bench.py out/ --rate <your-hourly-rate>
 
 # on a market
 docker build -t <registry>/nosana-i2v:latest . && docker push <registry>/nosana-i2v:latest
-# replace both REPLACE_ME markers: the image reference and the still-image URL
+# job-i2v.json ships pointing at ghcr.io/bisstown3000/nosana-i2v:latest and examples/stills/hook_01.png — change both for your own run
 $EDITOR nosana/job-i2v.json
 scripts/submit_nosana.sh nvidia-4090 8
 nosana job get <job-id> > out/node-a.log
